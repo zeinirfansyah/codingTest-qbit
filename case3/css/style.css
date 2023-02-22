@@ -1,0 +1,51 @@
+.navbar {
+    background-color: #2B2E4A !important;
+}
+
+.navbar-brand span {
+    color: #E84545;
+}
+
+.nav-item .send-email {
+    color: #E84545 !important;
+}
+
+a.active {
+    color: #E84545 !important;
+    font-weight: bold;
+}
+
+a.nav-link:hover {
+    color: #fff !important;
+}
+
+.hero{
+    background-color: #2B2E4A !important;
+    padding-top: 3rem;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+  }
+
+  .display-4, .lead, .desc{
+      color: #fff;
+  }
+
+
+  .display-4 span {
+      color: #E84545;
+  }
+
+  button.btn-letstalk {
+    border: 2px solid #E84545;
+    border-radius: 15px;
+    color: #fff;
+  }
+
+    button.btn-letstalk:hover {
+        background-color: #E84545;
+        border: 2px solid #E84545;
+        border-radius: 15px;
+        color: #2B2E4A;
+    }
