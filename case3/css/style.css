@@ -19,13 +19,10 @@ a.nav-link:hover {
     color: #fff !important;
 }
 
-.hero{
-    background-color: #2B2E4A !important;
-    padding-top: 3rem;
-}
 
 .jumbotron {
-    padding-top: 3rem;
+    background-color: #2B2E4A !important;
+    padding-top: 2rem;
   }
 
   .display-4, .lead, .desc{
