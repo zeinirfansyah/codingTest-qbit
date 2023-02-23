@@ -1,19 +1,11 @@
 .navbar {
-    background-color: #2B2E4A !important;
+    background-color: #fff !important;
 }
 
 .navbar-brand span {
-    color: #E84545;
+    color: #8CBA51;
 }
 
-.nav-item .send-email {
-    color: #E84545 !important;
-}
-
-a.active {
-    color: #E84545 !important;
-    font-weight: bold;
-}
 
 a.nav-link:hover {
     color: #fff !important;
@@ -21,28 +13,42 @@ a.nav-link:hover {
 
 
 .jumbotron {
-    background-color: #2B2E4A !important;
-    padding-top: 2rem;
+    background-color: #fff !important;
+    padding-top: 6rem;
   }
 
-  .display-4, .lead, .desc{
-      color: #fff;
-  }
 
 
   .display-4 span {
-      color: #E84545;
+      color: #8CBA51;
   }
 
-  button.btn-letstalk {
-    border: 2px solid #E84545;
+  .hero-img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    z-index: 1;
+    border-radius: 20px;
+}
+.hero-img2 {
+    position: relative;
+    top: 50px;
+    left: -40px;
+    width: 250px;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+  button.btn-orderNow {
+    border: 2px solid #8CBA51;
     border-radius: 15px;
-    color: #fff;
+    color: #8CBA51;
   }
 
-    button.btn-letstalk:hover {
-        background-color: #E84545;
-        border: 2px solid #E84545;
+    button.btn-orderNow:hover {
+        background-color: #8CBA51;
+        border: 2px solid #8CBA51;
         border-radius: 15px;
-        color: #2B2E4A;
+        color: #fff;
     }
