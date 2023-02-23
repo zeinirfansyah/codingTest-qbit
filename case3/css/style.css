@@ -17,8 +17,6 @@ a.nav-link:hover {
     padding-top: 6rem;
   }
 
-
-
   .display-4 span {
       color: #8CBA51;
   }
@@ -27,17 +25,63 @@ a.nav-link:hover {
     position: relative;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 49%;
     z-index: 1;
     border-radius: 20px;
 }
+
 .hero-img2 {
     position: relative;
     top: 50px;
-    left: -40px;
-    width: 250px;
+    left: -100px;
+    width: 49%;
     z-index: 2;
     border-radius: 20px;
+}
+
+
+.produk {
+    background-color: #8CBA51 !important;
+}
+
+.product-container {
+    position: relative;
+    top: 0;
+
+}
+
+.header-product-container  h1, .header-product-container p {
+    color: #fff;
+}
+
+.buah, .buah img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card{
+    display: block;
+    width: 190px;
+}
+
+.card-title {
+    font-size: 13px;
+}
+
+.buah img {
+    box-shadow: 0 0 10px #00000080;
+}
+
+.buah .card-body {
+    font-size: 10px;
+}
+
+.tipeBuah{
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #8CBA51;
+    color: #fff;
 }
 
   button.btn-orderNow {
@@ -51,4 +95,14 @@ a.nav-link:hover {
         border: 2px solid #8CBA51;
         border-radius: 15px;
         color: #fff;
+    }
+
+
+    /* media screen desktop */
+    @media screen and (min-width: 992px) {
+
+        .card{
+            display: block;
+            width: 250px;
+        }
     }
