@@ -1,9 +1,10 @@
 .navbar {
-    background-color: #fff !important;
+    background-color: #ffffff00 !important;
 }
 
 .navbar-brand span {
-    color: #8CBA51;
+    color: #c92031;
+    font-weight: bolder;
 }
 
 
@@ -12,13 +13,23 @@ a.nav-link:hover {
 }
 
 
-.jumbotron {
-    background-color: #fff !important;
-    padding-top: 6rem;
-  }
+.hero {
+    background: linear-gradient(#000000ea, #000000e0), url(../assets/bg.jpg);
+    color: #ffffff;
+    background-size: cover;
+}
 
-  .display-4 span {
-      color: #8CBA51;
+.jumbotron {
+    position: relative;
+    height: 80vh;
+    padding-top: 6rem;
+    background-image: url(../assets/wave1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+span {
+      color: #c92031;
   }
 
   .hero-img1 {
@@ -39,29 +50,15 @@ a.nav-link:hover {
     border-radius: 20px;
 }
 
-
-.produk {
-    background-color: #8CBA51 !important;
-}
-
-.product-container {
-    position: relative;
-    top: 0;
-
-}
-
-.header-product-container  h1, .header-product-container p {
-    color: #fff;
-}
-
 .buah, .buah img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .card{
     display: block;
-    width: 190px;
+    width: 180px;
+    padding: 0px;
 }
 
 .card-title {
@@ -69,7 +66,7 @@ a.nav-link:hover {
 }
 
 .buah img {
-    box-shadow: 0 0 10px #00000080;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .buah .card-body {
@@ -77,11 +74,38 @@ a.nav-link:hover {
 }
 
 .tipeBuah{
+    float: right;
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #8CBA51;
     color: #fff;
+}
+
+.about {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(#000000ea, #000000e0), url(../assets/bg.jpg);
+    color: #ffffff;
+    background-size: cover;
+}
+
+.about-img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 42%;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.about-img2 {
+    position: relative;
+    top: 50px;
+    left: -100px;
+    width: 39%;
+    z-index: 2;
+    border-radius: 20px;
 }
 
   button.btn-orderNow {
@@ -97,12 +121,37 @@ a.nav-link:hover {
         color: #fff;
     }
 
+    .pagination-btn {
+        background-color: #fff;
+        border: 1px solid #8CBA51;
+        padding: 10px;
+        border-radius: 10px;
+        color: #8CBA51;
+    }
+
 
     /* media screen desktop */
     @media screen and (min-width: 992px) {
+        .jumbotron {
+            position: relative;
+            height: 95vh;
+            padding-top: 6rem;
+            background-image: url(../assets/wave1.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
 
         .card{
             display: block;
-            width: 250px;
+            width: 310px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .card-text, .fruit-description {
+            font-size: 12px;
         }
     }

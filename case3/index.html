@@ -14,43 +14,43 @@
   </head>
   <body>
 
-<!-- navbar start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- Brand logo -->
-      <a class="navbar-brand" href="#"><span>Fresh</span>Bites</a>
-  
-      <!-- Hamburger button mobile screens -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fruits</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Social Media</a>
-            </li>
-        </ul>
-        <div>
-          <button class="btn btn-orderNow" type="button">Order Now!</button>
-        </div>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- navbar end -->
-
   <!-- hero section -->
   <section id="home" class="hero mb-5 mb-md-0 text-center text-md-start">
+    
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+      <div class="container">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="#"><span>Fresh</span>Bites</a>
+
+        <!-- Hamburger button mobile screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://instagram.com">Social Media</a>
+              </li>
+          </ul>
+          <div>
+            <button class="btn btn-orderNow" type="button">Order Now!</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
     <div class="jumbotron">
       <div class="container">
         <div class="row">
@@ -75,14 +75,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </section>
   <!-- hero section end -->
-  <!-- product section -->
 
-  <section id="produk" class="produk">
-    <svg id="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,176C384,160,480,128,576,117.3C672,107,768,117,864,138.7C960,160,1056,192,1152,218.7C1248,245,1344,267,1392,277.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  <!-- product section -->
+  <section id="produk" class="produk mb-5">
     <div class="container product-container">
       <div class="row header-product-container">
         <div class="col-md-12 text-center">
@@ -94,9 +93,97 @@
       <div id="products" class="row products">
        
       </div>
+      <div class="pagination mb-3"></div>
     </div>
   </section>
   <!-- --- -->
+  
+  <section id="about" class="about mt-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 justify-content-center d-none d-lg-flex">
+          <img class="about-img1" src="assets/anna-bratiychuk-VkOCQt9YiyI-unsplash.jpg" alt="">
+          <img class="about-img2" src="assets/monika-grabkowska-B3ZHo7aoJEc-unsplash.jpg" alt="">
+        </div>
+        <div class="col-md-6" >
+          <h1 class="fw-bolder">About Us</h1>
+          <p class="fw-normal">
+            <span>Fresh</span>Bite - Freshen up your day with FreshBites.</p>
+          <hr class="my-4 heroHR" />
+          <p class="desc">
+            Welcome to FreshBite, your ultimate destination for fresh and healthy fruits! We are passionate about bringing you the best quality fruits from our farms, so you can experience the ultimate taste and freshness in every bite.
+
+            <br>
+            <br>
+
+            At FreshBite, we understand the importance of healthy eating habits in maintaining an active and healthy lifestyle. That's why we're committed to providing you with the best and freshest fruits all year round.
+            
+            <br>
+            <br>
+
+            Our fruits are carefully picked and packed to ensure that they arrive at your doorstep in the best condition possible. We work directly with farmers to ensure that our fruits are grown using the best farming practices and are free from harmful chemicals.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <!-- order form -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="fw-bolder">Order Now!</h1>
+          <p class="fw-normal">Freshen up your day with FreshBites.</p>
+          <hr class="my-4 heroHR" />
+          <p>
+            We know fruits is the best and healthy choice to make your body fit and full with energy. With a lot of benefits, fruits now easier to get with Freshbite. Start your healthy lifestyle right now with Freshbite. Let's order now!
+          </p>
+        </div>
+        <div class="col">
+          <div class="card w-100">
+            <div class="card-body">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="namaLengkap" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="namaLengkap">
+                </div>
+                <div class="col-md-6">
+                  <label for="noTelepon" class="form-label">Phone</label>
+                  <input type="text" class="form-control" id="noTelepon">
+                </div>
+                <div class="col-12">
+                  <label for="alamatLengkap" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="alamatLengkap" placeholder="1234 Main St">
+                </div>
+                <div class="col-md-6">
+                  <label for="kota" class="form-label">City</label>
+                  <input type="text" class="form-control" id="kota">
+                </div>
+                <div class="col-md-4">
+                  <label for="choosen-product" class="form-label">Product</label>
+                  <select id="choosen-product" class="form-select">
+                    <option selected>Manggis - 1Kg</option>
+                    <option>Aple - 1Kg</option>
+                    <option>Jeruk - 1Kg</option>
+                    <option>Strawberry - 1Kg</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="kodePOS" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="kodePOS">
+                </div>
+                <!-- Button Submit -->
+                <div class="col-12">
+                  <button type="submit" class="btn btn-orderNow">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
  
 
   <script src="js/functions.js"></script>
