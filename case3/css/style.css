@@ -1,8 +1,17 @@
+
+
+
 .navbar {
     background-color: #ffffff00 !important;
 }
 
 .navbar-brand span {
+    color: #c92031;
+    font-weight: bolder;
+}
+
+.askUs {
+    float: right;
     color: #c92031;
     font-weight: bolder;
 }
@@ -78,7 +87,7 @@ span {
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #8CBA51;
+    background-color: #47d527;
     color: #fff;
 }
 
@@ -109,24 +118,32 @@ span {
 }
 
   button.btn-orderNow {
-    border: 2px solid #8CBA51;
+    border: 2px solid #D52727;
     border-radius: 15px;
-    color: #8CBA51;
+    color: #D52727;
   }
 
     button.btn-orderNow:hover {
-        background-color: #8CBA51;
-        border: 2px solid #8CBA51;
+        background-color: #d52727;
+        border: 2px solid #d52727;
         border-radius: 15px;
         color: #fff;
     }
 
     .pagination-btn {
         background-color: #fff;
-        border: 1px solid #8CBA51;
+        border: 1px solid #D52727;
         padding: 10px;
         border-radius: 10px;
-        color: #8CBA51;
+        color: #D52727;
+    }
+
+    .footer {
+        background: linear-gradient(#000000ea, #000000e0), url(../assets/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        padding: 20px;
     }
 
 

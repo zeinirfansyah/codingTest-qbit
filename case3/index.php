@@ -1,3 +1,26 @@
+<?php
+  include 'config.php';
+  
+  if(isset($_POST['pesan'])) {
+    $nama_pemesan = $_POST['nama_pemesan'];
+    $no_hp_pemesan = $_POST['no_hp_pemesan'];
+    $alamat_pemesan = $_POST['alamat_pemesan'];
+    $kota_asal_pemesan = $_POST['kota_asal_pemesan'];
+    $produk_dipesan = $_POST['produk_dipesan'];
+    $kode_pos_pemesan = $_POST['kode_pos_pemesan'];
+
+    $sql = mysqli_query($conn, "INSERT INTO orders VALUES (null, '$nama_pemesan', '$no_hp_pemesan', '$alamat_pemesan', '$kota_asal_pemesan', '$produk_dipesan', '$kode_pos_pemesan')");
+    if($sql) {
+      echo "<script>alert('Pesanan berhasil dikirim. Terima kasih atas pesanan anda.');window.location='index.php';</script>";
+    } else {
+      echo "<script>alert('Pesanan gagal dikirim. Silahkan coba lagi.');</script>";
+    }
+  
+  }
+
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -141,51 +164,82 @@
             We know fruits is the best and healthy choice to make your body fit and full with energy. With a lot of benefits, fruits now easier to get with Freshbite. Start your healthy lifestyle right now with Freshbite. Let's order now!
           </p>
         </div>
-        <div class="col">
-          <div class="card w-100">
-            <div class="card-body">
-              <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="namaLengkap" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="namaLengkap">
-                </div>
-                <div class="col-md-6">
-                  <label for="noTelepon" class="form-label">Phone</label>
-                  <input type="text" class="form-control" id="noTelepon">
-                </div>
-                <div class="col-12">
-                  <label for="alamatLengkap" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="alamatLengkap" placeholder="1234 Main St">
-                </div>
-                <div class="col-md-6">
-                  <label for="kota" class="form-label">City</label>
-                  <input type="text" class="form-control" id="kota">
-                </div>
-                <div class="col-md-4">
-                  <label for="choosen-product" class="form-label">Product</label>
-                  <select id="choosen-product" class="form-select">
-                    <option selected>Manggis - 1Kg</option>
-                    <option>Aple - 1Kg</option>
-                    <option>Jeruk - 1Kg</option>
-                    <option>Strawberry - 1Kg</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="kodePOS" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="kodePOS">
-                </div>
-                <!-- Button Submit -->
-                <div class="col-12">
-                  <button type="submit" class="btn btn-orderNow">Submit</button>
-              </form>
-            </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card w-100 mb-5">
+          <div class="card-body">
+            <form class="row g-3" action="" method="post">
+              <div class="col-md-6">
+                <label for="nama_pemesan" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nama_pemesan" name="nama_pemesan">
+              </div>
+              <div class="col-md-6">
+                <label for="no_hp_pemesan" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="no_hp_pemesan" name="no_hp_pemesan">
+              </div>
+              <div class="col-12">
+                <label for="alamat_pemesan" class="form-label">Address</label>
+                <input type="text" class="form-control" id="alamat_pemesan"  name="alamat_pemesan">
+              </div>
+              <div class="col-md-6">
+                <label for="kota_asal_pemesan" class="form-label">City</label>
+                <input type="text" class="form-control" id="kota_asal_pemesan" name="kota_asal_pemesan">
+              </div>
+              <div class="col-md-4">
+                <label for="produk_dipesan" class="form-label">Product</label>
+                <select id="produk_dipesan" class="form-select" name="produk_dipesan">
+                  <option selected value="Manggis 1kg">Manggis - 1Kg</option>
+                  <option value="Aple 1kg">Aple - 1Kg</option>
+                  <option value="Jeruk 1kg">Jeruk - 1Kg</option>
+                  <option value="Strawberry 1kg">Strawberry - 1Kg</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="kode_pos_pemesan" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="kode_pos_pemesan" name="kode_pos_pemesan">
+              </div>
+              <!-- Button Submit -->
+              <div class="col-12">
+                <button type="submit" name="pesan" class="btn btn-orderNow">Submit</button>
+                <a href="https://wa.me/1XXXXXXXXXX?text=I'm%20interested%20in%20your%20product" target="_blank" class="float-end" style="text-decoration: none; color: #d53535;">If you need something, click here to send us a message!</a>
+            </form>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
- 
-
+  <section class="footer py-4">
+    <div class="container">
+      <div class="row d-none d-lg-flex">
+        <div class="col-lg-4">
+          <h5><span>About Us</span></h5>
+          <p>
+            FreshBite is a fruit delivery service that provides you with the best and freshest fruits all year round. We work directly with farmers to ensure that our fruits are grown using the best farming practices and are free from harmful chemicals.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h5><span>Contact Us</span></h5>
+          <p>Sleman<br> Yogyakarta, Indonesia 47813<br> Email: freshbite@example.com<br> Phone: +62895613xxxxxxx</p>
+        </div>
+        <div class="col-lg-4">
+          <h5><span>Connect With Us</span></h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white"><i class="fab fa-facebook fa-lg me-2"></i>Facebook</a></li>
+            <li><a href="#" class="text-white"><i class="fab fa-twitter fa-lg me-2"></i>Twitter</a></li>
+            <li><a href="#" class="text-white"><i class="fab fa-instagram fa-lg me-2"></i>Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-12 text-center">
+          <p class="mb-0">&copy; 2023 FreshBite Zein Irfansyah. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+</section>
+  
   <script src="js/functions.js"></script>
     <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
